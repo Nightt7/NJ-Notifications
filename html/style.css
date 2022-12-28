@@ -1,0 +1,72 @@
+
+
+@font-face {
+    font-family: boxed;
+    src: url(./fonts/boxedfont.ttf);
+}
+
+body{
+    overflow: hidden;
+}
+
+*{
+    color: white;
+}
+
+.noti{
+    position: absolute;
+    bottom: 2vw;
+    left: 1vw;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+}
+
+.ncontainer {
+    font-family: boxed;
+    background-color: rgba(0, 0, 0, 0.548);
+    border: .1vw solid rgba(0, 0, 0, 0.411);
+    box-shadow: 0 0 4px black;
+    border-radius: .25vw;
+    min-width: 11vw;
+    padding: .25vw;
+    min-height: 2.5vw;
+    margin-bottom: .2vw;
+    margin-top: .2vw;
+    animation: anim-1 .4s forwards;
+}
+
+#ntitle {
+    width: max-content;
+    background-color: rgba(110, 110, 110, 0.253);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.096);
+    padding: .25vw;
+    font-size: .7vw;
+    border-radius: .25vw;
+}
+
+#infotext {
+    text-shadow: 1px 1px 2px black;
+    font-size: .7vw;
+    max-width: 11vw;
+    margin-top: .2vw;
+    margin-left: .1vw;
+    margin-bottom: .2vw;
+}
+
+#info-icon {
+    color:rgb(60, 255, 0);
+    text-shadow: 0 0 4px rgb(60, 255, 0);
+    margin-right: .2vw;
+}
+
+@keyframes anim-1 {
+    0%{
+        opacity: 0;
+        transform: translateY(25vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0vw);
+    }
+}
