@@ -22,7 +22,9 @@ Pasos para instalar las notificaciones y que sean funcionales:
  
  
  
- 3 - Dirigete al script `es_extended` y añade las siguientes lineas de código: `TriggerEvent('nj_notifications:Notification', msg, 'INFO')`
+ 3 - Dirigete al script `es_extended` y añade las siguientes lineas de código: `ESX.ShowNotification = function(msg, type)
+    TriggerEvent('nj_notifications:Notification', msg, 'INFO')
+end`
  
  
  4 - Disfrutar! Las notificaciones deberían de funcionar perfectamente. Cualquier duda abre ticket en discord o pregunta. 
